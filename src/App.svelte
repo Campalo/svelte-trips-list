@@ -1,5 +1,6 @@
 <script>
   import Trip from "./Trip.svelte";
+  import From from "./Form.svelte";
 </script>
 
 <style>
@@ -10,4 +11,5 @@
 </style>
 
 <h1>Plan your next trips</h1>
+<From />
 <Trip />

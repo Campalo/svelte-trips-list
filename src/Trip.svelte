@@ -1,3 +1,12 @@
+<script>
+  // make the variables available in the parent
+  export let TripDestination;
+  export let TripDuration;
+  export let TripDate;
+  export let TripParticipants;
+  export let TripDetails;
+</script>
+
 <style>
   section {
     padding: 1rem;
@@ -10,9 +19,9 @@
 </style>
 
 <section>
-  <h2>Destination:</h2>
-  <h3>Duration: days</h3>
-  <h3>Date:</h3>
-  <h4>Participants:</h4>
-  <p>Details:</p>
+  <h2>Destination: {TripDestination}</h2>
+  <h3>Duration: {TripDuration} days</h3>
+  <h3>Date: {TripDate}</h3>
+  <h4>Participants: {TripParticipants}</h4>
+  <p>Details: {TripDetails}</p>
 </section>

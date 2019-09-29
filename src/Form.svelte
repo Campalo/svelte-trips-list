@@ -1,9 +1,9 @@
 <script>
-  let destination = "";
-  let duration = "";
-  let date = "";
-  let participants = "";
-  let details = "";
+  export let destination = "";
+  export let duration = "";
+  export let date = "";
+  export let participants = "";
+  export let details = "";
 </script>
 
 <style>
@@ -41,7 +41,7 @@
 
 <form>
   <div>
-  <!-- bind:value : when the value is updated in the input it will update the var value asap and keep the format-->
+    <!-- bind:value : when the value is updated in the input it will update the var value asap and keep the format-->
     <label for="destination">Destination:</label>
     <input
       type="text"
@@ -62,7 +62,11 @@
 
   <div>
     <label for="participants">Participants names:</label>
-    <input type="text" id="participants" value={participants} bind:value={participants} />
+    <input
+      type="text"
+      id="participants"
+      value={participants}
+      bind:value={participants} />
   </div>
 
   <div>
